@@ -1,0 +1,8 @@
+reviewId,placeId,stars,pred_dim,pred_dim2,pred_dim3
+example-001,store-a,1,Acceptability,Accommodation,
+example-002,store-a,5,Availability,,
+example-003,store-a,4,Affordability,Acceptability,
+example-004,store-b,5,Accessibility,Availability,
+example-005,store-b,2,Accommodation,,
+example-006,store-b,5,Acceptability,Affordability,Availability
+

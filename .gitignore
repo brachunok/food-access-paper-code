@@ -1,0 +1,24 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Raw reviews and fitted models are not versioned.
+data/raw/
+models/
+
+# Generated outputs (directory placeholders remain versioned).
+data/derived/*
+!data/derived/.gitkeep
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/tables/*
+!outputs/tables/.gitkeep
+
+# Bayesian sampler artifacts can be large.
+*.nc
+

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "food-access-reviews"
+version = "0.1.0"
+description = "Reproducible analysis of perceived food access in grocery-store reviews"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {text = "MIT"}
+authors = [
+  {name = "Teresa Groton"},
+  {name = "Benjamin Rachunok"}
+]
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.1,<3",
+  "PyYAML>=6,<7"
+]
+
+[project.optional-dependencies]
+modeling = [
+  "arviz>=0.17,<1",
+  "pymc>=5.10,<6"
+]
+topics = [
+  "bertopic>=0.16,<1",
+  "hdbscan>=0.8.33,<1",
+  "sentence-transformers>=2.6,<4",
+  "umap-learn>=0.5.5,<1"
+]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+food-access-scores = "food_access_reviews.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+

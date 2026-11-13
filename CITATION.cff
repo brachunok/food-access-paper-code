@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated article."
+title: "Code for Online Grocery Reviews Enable Population-Level Measurement of Perceived Food Access"
+type: software
+authors:
+  - family-names: Groton
+    given-names: Teresa
+  - family-names: Rachunok
+    given-names: Benjamin
+license: MIT
+repository-code: "https://github.com/brachunok/food-access-paper-code"
+version: 0.1.0
+date-released: 2026-11-13
+

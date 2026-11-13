@@ -1,0 +1,13 @@
+name: food-access-reviews
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.26
+  - pandas=2.2
+  - pyyaml=6
+  - pytest=8
+  - pip
+  - pip:
+      - -e .[modeling,topics,test]
+
